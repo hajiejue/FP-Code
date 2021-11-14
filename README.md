@@ -45,8 +45,18 @@ You can jointly train the enhancement network and end-to-end ASR network by the 
 		--cache_dir data/cache`
 ## Joint training for SEGAN and ASR
 Download this repo
-- 
-
+- `git clone https://github.com/hajiejue/FP-Code.git`
+- `python train.py --save_path ckpt_segan+ --batch_size 300 \
+		--clean_trainset data/clean_trainset \
+		--noisy_trainset data/noisy_trainset \
+		--cache_dir data/cache`
+## evaluation fo Joint training for SEGAN and ASR
+Downloat the subjective evaluation function
+- `https://www.crcpress.com/downloads/K14513/ K14513_CD_Files.zip`
+- unzip the file and find the fllowing file in K14513_CD_Files/MATLAB_code/objective_measures/quality
+- pesq.m, composite.m
+- set up the enhanced speech directory, clean speech directory and also noise speech directory.
+- run the code and get the result.
 
 
 
