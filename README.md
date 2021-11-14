@@ -7,7 +7,6 @@ This FP is based on two well designed neural netwrok. The first paper called
 The second paper called "SEGAN: Speech Enhancement Generative Adversarial Network"https://arxiv.org/pdf/1703.09452.pdf.  
  
 # Installation
-## the follwing model is just trained in their own repo
 ## Get code and dependencies for first paper
 - `git clone https://github.com/bliunlpr/Robust_e2e_gan.git`
 - Install the dependencies listed in 
