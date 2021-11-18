@@ -24,7 +24,7 @@ After downloading the first repo,
 ## Mix speech dataset and noise
 - `python3 data/prepare_feats.py data_dir feat_dir noise_repeat_num`
 - It will generate clean_feats.scp noisy_feats.scp and text for match data and unmatch data. In each time, you have to specify the noise data type(match and unmatch)
-## Pretrain the code for first paper
+## Pretrain the codes of first paper
 ### E2E ASR training
 - `python3 asr_train.py --dataroot Your data directory(including train, dev and test dataset)` 
 ### Enhancment training with no GAN
