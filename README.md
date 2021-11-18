@@ -1,10 +1,9 @@
 FP Code
 =======
 
-This FP is based on two well designed neural netwrok. The first paper called
-"Jointly Adversarial Enhancement Training for Robust End-to-End Speech Recognition". https://www.isca-speech.org/archive/pdfs/interspeech_2019/liu19_interspeech.pdf
+This FP is based on two well designed neural netwrok. The first paper is "Jointly Adversarial Enhancement Training for Robust End-to-End Speech Recognition". https://www.isca-speech.org/archive/pdfs/interspeech_2019/liu19_interspeech.pdf
 
-The second paper called "SEGAN: Speech Enhancement Generative Adversarial Network"https://arxiv.org/pdf/1703.09452.pdf.  
+The second paper is "SEGAN: Speech Enhancement Generative Adversarial Network"https://arxiv.org/pdf/1703.09452.pdf.  
  
 # Installation
 ## Get code and dependencies for first paper
@@ -17,7 +16,7 @@ or install dependencies by conda env
 - `git clone https://github.com/santi-pdp/segan_pytorch.git`
 - `pip install -r /path/to/requirements.txt`
 ## Get speech dataset and noise
-after downloading frist repo,
+After downloading the first repo,
 - `sh run.sh`
 - It will download the speech dataset and spilt it into train, test and val. More details about this dataset can be found here: http://www.aishelltech.com
 - Download the Noise dataset from here: https://datashare.ed.ac.uk/handle/10283/1942
