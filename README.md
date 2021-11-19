@@ -11,6 +11,7 @@ The second paper is called "SEGAN: Speech Enhancement Generative Adversarial Net
 - Install the dependencies listed in 
   - `pip install python==3.5`
   - `pip install pytorch==0.4.0`
+  - `pip install -r /path/to/requirements.txt`
 or install dependencies by conda env
 ## Get code and dependencies for second paper
 - `git clone https://github.com/santi-pdp/segan_pytorch.git`
@@ -20,16 +21,16 @@ After downloading the first repository,
 - `sh run.sh`
 - It will download the speech dataset and spilt it into train, test and validation datasets. More details about this dataset can be found here: http://www.aishelltech.com.
 - Download the noise dataset from https://datashare.ed.ac.uk/handle/10283/1942.
-- Split the noise dataset into "match" and "unmatch" data. "Match" dataset includes "White Noise", "Factory Floor Noise 1", "Cockpit Noise 1", "Cockpit Noise 3", "Engine Room Noise", "Military Vehicle Noise", "Machine Gun Noise", "Vehicle Interior Noise" and "HF Channel Noise". "Unmatch" dataset includes "Pink Noise", "Factory Floor Noise 2", "Cockpit Noise 2", "Operations Room" and "Military Vehicle Noise".
+- Split the noise dataset into "match" and "unmatch" dataset. "Match" dataset includes "White Noise", "Factory Floor Noise 1", "Cockpit Noise 1", "Cockpit Noise 3", "Engine Room Noise", "Military Vehicle Noise", "Machine Gun Noise", "Vehicle Interior Noise" and "HF Channel Noise". "Unmatch" dataset includes "Pink Noise", "Factory Floor Noise 2", "Cockpit Noise 2", "Operations Room" and "Military Vehicle Noise".
 ## Mix speech dataset and noise
 Mix the train and validation datasets with "match" noise and mix the test dataset with "unmatch" dataset. The following code will mix the datasets.
 - `python3 data/prepare_feats.py data_dir feat_dir noise_repeat_num`
-- The output of data/prepare_feats.py will generate "clean_feats.scp", "noisy_feats.scp" and text. "clean_feats.scp" is the file which include clean speech datasets, 
+- The output of data/prepare_feats.py will generate "clean_feats.scp", "noisy_feats.scp" and text. "clean_feats.scp" is the file which includes clean speech datasets, 
 "noisy_feats.scp" is the file in which mix the noise and clean speech datasets. "text" contains corresponding sentence/words about speech. 
 ## Pretrain the code of first paper
 ### E2E ASR training
 - `python3 asr_train.py --dataroot Your data directory(including train, dev and test dataset)` 
-### Enhancment training with without GAN
+### Enhancment training without GAN
 - `python3 enhance_fbank_train.py --dataroot Your data directory`  
 ### Enhancment training with GAN
 - `python3 enhance_gan_train.py --dataroot Your data directory`
