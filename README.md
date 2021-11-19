@@ -55,7 +55,7 @@ Downloat the subjective evaluation function
 - Set up the enhanced speech directory, clean speech directory and also noise speech directory for K14513_CD_Files/MATLAB_code/objective_measures/quality pesq.m, composite.m.
 - Run pesq.m, composite.m.
 ## Configuration
-The trained paramerters for joint traning can be found in config file. Namely "weights_EOE_D-Discriminator-26510.ckpt" and "segan+_generator.ckpt". The chickpoint file alse can be found in config file.
+The trained paramerters for joint traning can be found in ckpt+_segan file. Namely "weights_EOE_D-Discriminator-26510.ckpt" and "segan+_generator.ckpt". The chickpoint file alse can be found in config file.
 
 
 
