@@ -1,9 +1,0 @@
-{
-  "latest": [
-    "EOE_G-Generator-26510.ckpt",
-    "EOE_G-Generator-27051.ckpt",
-    "EOE_G-Generator-27592.ckpt",
-    "EOE_G-Generator-28133.ckpt"
-  ],
-  "current": "EOE_G-Generator-28133.ckpt"
-}
