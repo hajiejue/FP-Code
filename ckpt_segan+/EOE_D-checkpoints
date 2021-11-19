@@ -1,9 +1,0 @@
-{
-  "latest": [
-    "EOE_D-Discriminator-26510.ckpt",
-    "EOE_D-Discriminator-27051.ckpt",
-    "EOE_D-Discriminator-27592.ckpt",
-    "EOE_D-Discriminator-28133.ckpt"
-  ],
-  "current": "EOE_D-Discriminator-28133.ckpt"
-}
